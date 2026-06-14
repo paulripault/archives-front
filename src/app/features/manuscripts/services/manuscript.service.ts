@@ -6,8 +6,8 @@ import { Observable } from "rxjs";
     providedIn: 'root'
 })
 export class ManuscriptService {
-    private baseUrl = "http://localhost:8080/manuscripts";
-    private importUrl = "http://localhost:8080/imports/csv";
+    private baseUrl = "https://archives-back.onrender.com/manuscripts";
+    private importUrl = "https://archives-back.onrender.com/imports/csv";
 
     constructor(private http: HttpClient) {}
 
