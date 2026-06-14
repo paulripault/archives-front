@@ -1,0 +1,30 @@
+<div class="expension-panel" *ngIf="manuscript">
+
+  <!-- IMAGE ZOOM -->
+  <div class="image">
+    <img *ngIf="manuscript?.folios?.[0]?.zoom" [src]="'../images/' + manuscript.folios[0].zoom + '.png'"
+      alt="Zoom manuscrit" class="zoom-image" />
+  </div>
+
+  @for (entry of entries; track entry.label) {
+  <mat-expansion-panel class="pannel">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ entry.label }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      @if (entry.type === 'image') {
+      <img *ngIf="entry.value" [src]="'../images/' + entry.value + '.jpg'" alt="" class="panel-image" />
+      } @else if (entry.type === 'link') {
+      <a [href]="entry.value" target="_blank" rel="noopener noreferrer">
+        {{ entry.value }}
+      </a>
+      } @else {
+      {{ entry.value }}
+      }
+
+    </ng-template>
+  </mat-expansion-panel>
+  }
+</div>

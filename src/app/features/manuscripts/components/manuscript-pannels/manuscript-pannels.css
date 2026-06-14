@@ -1,0 +1,37 @@
+
+.image {
+    display: flex;
+    justify-content: center;
+
+    .zoom-image {
+        width: 40vw;
+    }
+}
+
+.panel-image {
+    height: 50vh;
+}
+
+.expension-panel {
+    display: grid;
+    gap: 10px;
+}
+
+.pannel {
+    border: 1px solid rgba(80, 67, 47, 0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fffdfa;
+    box-shadow: none;
+}
+
+.pannel mat-panel-title {
+    color: #342c20;
+    font-weight: 700;
+}
+
+.pannel ::ng-deep .mat-expansion-panel-body {
+    color: #3f3527;
+    line-height: 1.6;
+    white-space: pre-line;
+}
