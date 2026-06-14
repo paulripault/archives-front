@@ -18,7 +18,7 @@ export class ManuscriptPannels {
     { label: 'Titre', key: 'title' },
     { label: 'Cote', key: 'cote' },
     { label: 'Theme du manuscrit', key: 'theme' },
-    { label: 'Nom du Manuscript', key: 'manuscriptName' },
+    { label: 'Nom du Manuscrit', key: 'manuscriptName' },
     { label: 'Page', key: 'folios.page' },
     { label: 'Lieu de fabrication', key: 'manufacturingPlace' },
     { label: 'Support', key: 'support' },
